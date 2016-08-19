@@ -9,9 +9,9 @@ contract GiveControl is StandardController{
 
   }
 
-  function activate(NameRegistry _registry,GiveDB _dbAddress){
+  function activate(NameRegistry _registry,address _dbAddress) onlyOwner{
     activateController(_registry,_dbAddress);
-    giveDB = _dbAddress;
+    giveDB = GiveDB (_dbAddress);
   }
 
   function (){
