@@ -15,6 +15,21 @@ contract GiveControl is StandardController{
     giveDB = GiveDB (_dbAddress);
   }
 
+// need events for transactions
+
+// fill out
+  function donate(){
+
+  }
+
+  function check(){
+
+  }
+
+  function refuse(){
+
+  }
+
   function (){
   // allow Ether donations, why not
   }
